@@ -41,6 +41,10 @@ highlighter_pos=0
 length_box=max_x/3
 tick=0
 
+function check_winner()
+   
+end
+
 function select_square()
    h = board[highlighter_pos]
    if not (h == nil or h == "") then
@@ -50,16 +54,14 @@ function select_square()
    
    if btn(❎) then
       if (h == nil or h == "") then
-	      printh("value:"..tostr(h),"log")
-	      
 	      draw_highlighter(highlighter_pos, 0)
 	      
 	      if player_turn == player_x then
 	         set_board(highlighter_pos, player_x)
-	         player_turn = player_y
+	         player_turn = player_o
 	         draw_x(highlighter_pos) 
-	      elseif player_turn == player_y then
-	         set_board(highlighter_pos, player_x)
+	      elseif player_turn == player_o then
+	         set_board(highlighter_pos, player_o)
 	         player_turn = player_x
 	         draw_o(highlighter_pos)
 	      end
