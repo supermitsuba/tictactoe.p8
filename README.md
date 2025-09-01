@@ -27,7 +27,11 @@ To create the html and js file:
 `export tictactoe.html`
 
 ## How to Play
-The app is created with the idea that you have a controller.  Both players, one controller.  `X` key is the `x` button.  Arrow keys navigate the board.  Each player alternates between their turn.
+The app is created with the idea that you have a controller.  Both players, one controller.  `X` key is the `x` button and the `O` key is the 'z' button.  Arrow keys navigate the board.  
 
-## Future
-I want to replace the second player with an AI.  I will probably maintain both and building both and have them available on the same server.
+### In 2 Player Mode
+Each player alternates between their turn.
+
+### In AI Player Mode
+AI takes turns with the first player.
+
